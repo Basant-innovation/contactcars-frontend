@@ -43,9 +43,7 @@
   &__info {
     //   border-right: 4px solid $primary-color;
     position: relative;
-    padding-right: $spacing-sm;
     margin-top: $spacing-md;
-
     &--primary {
       &::before {
         background: none repeat scroll 0 0 $secondary-color;
@@ -72,6 +70,14 @@
     }
   }
 
+  &__label {
+    color: $label-color;
+    font-weight: $font-weight-bold;
+  }
+  &__text {
+    color: $dark-color;
+  }
+
   &__dropdown {
     display: flex;
     justify-content: space-between;
@@ -79,6 +85,7 @@
     &__title {
       color: $secondary2-color;
       font-size: $font-size-18;
+      font-weight: $font-weight-bold;
       &:hover {
         cursor: pointer;
       }
@@ -95,9 +102,6 @@
       margin-left: -$spacing-md;
     }
   }
-}
-.bold {
-  font-weight: $font-weight-bold;
 }
 
 .show {
