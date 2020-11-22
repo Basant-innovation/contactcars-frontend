@@ -1,0 +1,119 @@
+@import "../../../scss/abstract/variables";
+
+.card {
+  background-color: white;
+  box-shadow: 1px 1px 6px #00000029;
+  border-radius: 10px;
+  display: flex;
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      color: $primary-color;
+      font-size: $font-size-25;
+      font-weight: $font-weight-bold;
+      text-align: right;
+
+      &::after {
+        background: none repeat scroll 0 0 $primary-color;
+        bottom: -5px;
+        content: "";
+        display: block;
+        height: 3px;
+        position: relative;
+        width: 125px;
+        border-radius: 10px;
+      }
+    }
+    &__actionbtn {
+      color: $secondary-color;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__info {
+    //   border-right: 4px solid $primary-color;
+    position: relative;
+    padding-right: $spacing-sm;
+    margin-top: $spacing-md;
+
+    &--primary {
+      &::before {
+        background: none repeat scroll 0 0 $secondary-color;
+        content: "";
+        display: block;
+        height: 90%;
+        position: absolute;
+        width: 4px;
+        border-radius: 10px;
+        right: 0;
+      }
+    }
+    &--secondary {
+      &::before {
+        background: none repeat scroll 0 0 $primary-color;
+        content: "";
+        display: block;
+        height: 90%;
+        position: absolute;
+        width: 4px;
+        border-radius: 10px;
+        right: 0;
+      }
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      color: $secondary2-color;
+      font-size: $font-size-18;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__status {
+      display: flex;
+      background-color: $background3-color;
+      color: $dark-color;
+      padding: $spacing-sm;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+      align-items: center;
+      font-size: $font-size-14;
+      margin-left: -$spacing-md;
+    }
+  }
+}
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.show {
+  display: none;
+}
+
+.showlabel {
+  display: block;
+}
+
+.toggle {
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .showlabel {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "DroidArabicKufi";
+  src: url("/../../assets/fonts/ArbFONTS-Droid\ Arabic\ Kufi.ttf")
+    format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DroidArabicKufi";
+  src: url("/../../assets/fonts/ArbFONTS-Droid\ Arabic\ Kufi\ Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $primary-font;
+  line-height: 1.5;
+}

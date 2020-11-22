@@ -1,0 +1,129 @@
+@import "../../../scss/abstract/variables";
+
+.insurance-description {
+  background-color: white;
+  box-shadow: 1px 1px 6px #00000029;
+  border-radius: 10px;
+  display: flex;
+  padding: $spacing-md;
+}
+
+.title {
+  color: $primary-color;
+  font-size: $font-size-25;
+  font-weight: $font-weight-bold;
+  text-align: right;
+
+  &::after {
+    background: none repeat scroll 0 0 $primary-color;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 3px;
+    position: relative;
+    width: 125px;
+    border-radius: 10px;
+  }
+}
+.link {
+  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.contact {
+  background-color: $background2-color;
+  display: flex;
+  border-radius: 10px;
+  padding: $spacing-md;
+  &__title {
+    color: $secondary2-color;
+    font-weight: 700;
+    margin-bottom: $spacing-sm;
+  }
+  &__img {
+    width: 80px;
+    margin-left: $spacing-md;
+  }
+  &__imgmobile {
+    display: none;
+  }
+  &__input {
+    border-radius: 50px;
+    border: 1px solid $light-color;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: $font-size-14;
+    margin-left: $spacing-sm;
+    margin-bottom: $spacing-sm;
+  }
+  &__button {
+    background-color: $secondary-color;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $font-size-14;
+  }
+}
+
+.description {
+  margin-top: $spacing-md;
+  margin-bottom: $spacing-md;
+}
+
+@media only screen and (max-width: 800px) {
+  .insurance-description {
+    flex-direction: column-reverse;
+  }
+  .insurance-img {
+    height: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .insurance-description {
+    flex-direction: column-reverse;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .breif {
+    background-color: white;
+    box-shadow: 1px 1px 6px #00000029;
+    border-radius: 10px;
+    padding: $spacing-md;
+    margin-bottom: $spacing-md;
+  }
+
+  .link {
+    display: flex;
+    color: $secondary-color;
+    align-items: center;
+  }
+
+  .contact {
+    background-color: white;
+    box-shadow: 1px 1px 6px #00000029;
+    border-radius: 10px;
+    display: flex;
+    padding: $spacing-md;
+    flex-wrap: wrap;
+
+    &__img {
+      display: none;
+    }
+    &__imgmobile {
+      display: block;
+    }
+    &__input {
+      width: 100%;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+}

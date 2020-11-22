@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <div class="card">
+    <div class="card__header">
+      <div class="card__header__title">طلب تقسيط سيارة</div>
+      <div class="card__header__actionbtn"><img src="../assets/more.svg"/>&nbsp;<div class="showlabel">إدارة إعلانك</div> </div>
+    </div>
+    <div class="card__body ">
+    <div class="card__info card__info--primary col-md-3 col-xs-6">
+      <b class="bold">رقم الطلب</b>
+      <p>1121324343243</p>
+    </div>
+    <div class="card__info card__info--primary col-md-3 col-xs-6">
+      <b class="bold">تاريخ تقديم الطلب</b>
+      <p>9 سبتمبر 2020</p>
+    </div>
+  </div>
+    <hr>
+    <div class="card__dropdown">
+    <div class="card__dropdown__title bold" (click)="Opened = !Opened">تفاصيل الطلب &nbsp;<img [ngClass]="{ toggle: Opened }" src="../assets/ic_expand_more_24px.svg"/></div>
+    <div class="card__dropdown__status"><img src="../assets/revise.svg"/>&nbsp;تحت المراجعة </div>
+  </div>
+  <div class="card__body" [ngClass]="{ show: Opened }" >
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">الماركة</b>
+    <p><img src="../assets/bmw.svg" width="20"/>&nbsp;بي ام دبليو</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">الموديل</b>
+    <p>320</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">السنة</b>
+    <p>2020</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">فئة السيارة</b>
+    <p>A/T Exclusive</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">المقدم</b>
+    <p>100,000</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">عدد الشهور</b>
+    <p>12</p>
+  </div>
+  <div class="card__info card__info--secondary col-md-3 col-xs-6">
+    <b class="bold">النظام</b>
+    <p>الافتصادي</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  
